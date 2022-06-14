@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+
+<body>
+
+    <!-- button handle -->
+
+
+    <h1 onclick="console.log('im here')"> Event management</h1>
+    <button onclick='console.log(7)'>click me </button>
+
+
+    <!-- anouther way -->
+
+    <h1 onclick="alert('masud tumi ki valo hobe na ?')"> Event management</h1>
+    <button onclick='alert(3)'>click me </button> <br> <br>
+
+
+
+
+    <!-- background color -- CLICK korar por background color change hoye jabe  -->
+    <button onclick="document.body.style.backgroundColor='yellow'">here me:yellow</button> <br> <br>
+
+
+
+
+
+    <!-- function call kore style er kag kora jay -->
+
+    <button onclick=" makered()">click me:red</button> <br><br>
+
+    <!-- link connection -->
+
+    <script src="js/events.js"></script>
+
+
+
+    <button onclick="makeblue()">click me : blue</button> <br> <br>
+
+
+    <button id="pink">click me :pink</button>
+
+
+
+
+    <script>
+
+        const pinkbutton = document.getElementById('pink');
+        console.log(pinkbutton);
+        pinkbutton.onclick = makepink;
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
