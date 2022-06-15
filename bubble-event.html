@@ -1,0 +1,54 @@
+<!-- what is event bubble
+onek gula parent are child gular modhe ul handler bahir kora jay taile aste aste capture korbe lowet value ke,,then aste
+aste upore uthbe EVENT ..ITS CALLED EVENT BUBBLE
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event bubble vai</title>
+</head>
+
+<body>
+    <h1>Event Bubble vai</h1>
+
+    <section id="section-container">
+        <h4>bubble vai list </h4>
+
+        <ul id="list-container">
+            <li class="item">Lorem, ipsum.</li>
+            <li id="second-item" class="item">Pariatur, quis.</li>
+            <li class="item">Obcaecati, sequi.</li>
+            <li class="item">Velit, explicabo!</li>
+            <li class="item">Accusamus, quo!</li>
+            <li class="item">Rem, provident?</li>
+        </ul>
+    </section>
+
+    <script>
+        document.getElementById('second-item').addEventListener('click', function (event) {
+            console.log("second item click")
+            // interview question what isstopPropagation?
+
+            event.stopPropagation();
+        });
+
+        // ul
+        document.getElementById('list-container').addEventListener('click', function () {
+
+            console.log("ul click")
+        });
+
+
+        // section
+        document.getElementById('section-container').addEventListener('click', function () {
+
+            console.log("section clicked")
+        });
+    </script>
+</body>
+
+</html>
