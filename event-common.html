@@ -1,7 +1,5 @@
 <!-- buttom er value paragraph e convert ,,value update using funcrion -->
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +25,7 @@
 
 
 
-
+    <!-- --------------------------------------------------------------------------- -->
 
     <script>
         //  using function
@@ -41,9 +39,7 @@
 
 
         // anouther way  for second button direct 
-
         document.getElementById('handle-event').addEventListener('click', function () {
-
             const p = document.getElementById('clicking-method');
             p.innerText = 'set by direct add event';
         })
@@ -52,13 +48,9 @@
 
 
         // update direct
-
         document.getElementById('update-name').addEventListener('click', function () {
-
-
             const namefield = document.getElementById('name-field');
             const p = document.getElementById('clicking-method');
-
             p.innerText = namefield.value;
             namefield.value = ' ';
 
