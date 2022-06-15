@@ -1,6 +1,4 @@
 <!-- facebook comment -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,18 +10,9 @@
 </head>
 
 <body>
-
-
-
-
-
-
-
     <h2>Add you comment,please!!!! </h2>
-
     <section>
         <h4>Your Comments</h4>
-
         <div id="comment-container">
             <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis accusantium in repellendus expedita
                 labore alias sequi quis vero nam ratione fuga quasi mollitia unde quidem, accusamus voluptate nemo id
@@ -31,52 +20,30 @@
             <p>Eveniet error ab distinctio porro laborum tempore, magni voluptas necessitatibus voluptatem odio beatae
                 aliquam aut maiores quidem, consequatur voluptates voluptatibus amet quam harum consequuntur vel aliquid
                 iusto veritatis? Aut, aliquam.</p> -->
-
         </div>
         <div>
-
             <textarea name="" id="new-comment" cols="60" rows="4"></textarea> <br>
             <button id="submit-comment">post</button>
         </div>
-
     </section>
-
-
-
     <script>
-
         // step 01---post button ke consol kora 
-
-
-
         document.getElementById('submit-comment').addEventListener('click', function () {
             // console.log('im working dude');
-
-
-
             // step -02
-
             const commentBox = document.getElementById('new-comment');
             // console.log(commentBox.value);
             const UserComent = commentBox.value;
-
             // step -03 create coment paragraph
             const NewComent = document.createElement('p');
             NewComent.innerText = commentBox.value;
-
             // append the comment
-
             const comaintcontainer = document.getElementById('comment-container');
-
             comaintcontainer.appendChild(NewComent);
             // step-5 clean coment box
-
             commentBox.value = '';
-
         })
-
     </script>
-
 </body>
 
 </html>
