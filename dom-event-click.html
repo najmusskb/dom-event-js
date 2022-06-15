@@ -1,3 +1,6 @@
+<!-- different vabe background color set kora hoy  -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,32 +39,67 @@
 
     <button onclick=" makered()">click me:red</button> <br><br>
 
+    <button id="make-green">click me : green</button>
+
+
+
+
+
+
+
+
+
     <!-- link connection -->
 
     <script src="js/events.js"></script>
 
 
-
     <button onclick="makeblue()">click me : blue</button> <br> <br>
-
-
     <button id="pink">click me :pink</button>
+    <button id="make-golden">click me:golden rod</button>
+    <button id="orange-button">click me : orange</button>
 
 
+
+    <!-- eita shortkhan niyom  -->
+    <!-- Anonymous system....mane jar kono nam nai   -->
+    <button id="light-blue">click:lightblue</button>
 
 
     <script>
 
+        // for pink
         const pinkbutton = document.getElementById('pink');
         console.log(pinkbutton);
         pinkbutton.onclick = makepink;
 
+
+        // for golden 
+
+        const goldenbutton = document.getElementById('make-golden');
+        goldenbutton.addEventListener('click', makeGoldenrod);
+        function makeGoldenrod() {
+            document.body.style.backgroundColor = 'goldenrod';
+        }
+
+
+
+        // for orange
+        const orangeButton = document.getElementById('orange-button');
+        orangeButton.addEventListener('click', function () {
+
+            document.body.style.backgroundColor = 'orange';
+        })
+
+
+        // for light blue.....vvi
+
+        document.getElementById('light-blue').addEventListener('click', function () {
+            document.body.style.backgroundColor = 'lightblue';
+        })
+
+
     </script>
-
-
-
-
-
 
 </body>
 
