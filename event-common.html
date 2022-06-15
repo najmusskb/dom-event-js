@@ -1,0 +1,73 @@
+<!-- buttom er value paragraph e convert ,,value update using funcrion -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <p id="clicking-method"></p>
+    <input id="name-field" type="text">
+    <button id="update-name">update</button>
+
+    <button onclick="handleJustfunctionClick () ">just function</button>
+
+    <button id="handle-event">Direct add Event Listener</button>
+
+
+
+
+
+    <script>
+        //  using function
+
+        function handleJustfunctionClick() {
+            const p = document.getElementById('clicking-method');
+            p.innerText = 'set by using function';
+        }
+
+
+
+
+        // anouther way  for second button direct 
+
+        document.getElementById('handle-event').addEventListener('click', function () {
+
+            const p = document.getElementById('clicking-method');
+            p.innerText = 'set by direct add event';
+        })
+
+
+
+
+        // update direct
+
+        document.getElementById('update-name').addEventListener('click', function () {
+
+
+            const namefield = document.getElementById('name-field');
+            const p = document.getElementById('clicking-method');
+
+            p.innerText = namefield.value;
+            namefield.value = ' ';
+
+        })
+
+
+    </script>
+
+
+</body>
+
+</html>
